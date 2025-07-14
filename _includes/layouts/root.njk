@@ -19,99 +19,19 @@ title: rivst
 
 <body>
     <div id="wrapper">
-
         <div id="open"><span id="open-icon"></span><span class="open-text">menu</span></div>
-
         <header>
             <div id="header-inner">
-                <h1><span><a href="/">SiteName,responsive_n054</a></span></h1>
-                ここにも文字書けます
+                <h1><span><a href="/">rivst</a></span></h1>
+                my home page on the world wide web
             </div>
-        </header><!-- ▲ヘッダ▲ -->
-
-        <!-- ▼メイン▼ -->
+        </header>
         <div id="contents" class="cf">
-
-            <!-- ▼右側▼ -->
             <div id="rightcolumn-wrap">
                 <div id="rightcolumn" style="min-height: 544px;">
-                    <article>
-                        <h2>First</h2>
-                        <div class="">テンプレート番号：n-054a<br>
-                            レスポンシブ
-                        </div>
-                        <hr>
-                        <a href="../zip/n054a.zip" target="_top"><img src="../a/dl01.gif" width="62"
-                                height="12">圧縮ファイルダウンロード</a>
-                        <hr>
-                        600px以下の場合、メニュー下の内容も一旦隠すように変更しました
-                        <h3>色違いあります</h3>
-                        クリックでサンプル出ます。<br>
-                        <a href="index2.html"><img src="../back/n054a.png" class="sampleimg" width="107"
-                                height="80"></a>
-                        <a href="../n054b/index2.html"><img src="../back/n054b.png" class="sampleimg" width="107"
-                                height="80"></a>
-
-                        <h2>はじめに</h2>
-
-                        <div class="line">
-                            当サイトは○○サイトです。サイト内の画像・文章の二次利用はご遠慮願います。みたいな何かを書いたり書かなかったり。<br>
-                            <a href="index.html">テキストリンク</a>はこうなりまして、<em>文章を強調</em>したり<span
-                                class="marker">マーカー風文字</span>にしたりするとこうなりますのです。
-                        </div>
-
-                        <h2 id="novel">Novel</h2>
-
-                        <h3>long</h3>
-                        <a href="#">リンク1</a> / <a href="#">リンク2</a> / <a href="#">リンク3</a>
-
-                        <h3>short</h3>
-                        <a href="#">リンク1</a> / <a href="#">リンク2</a> / <a href="#">リンク3</a><br>
-                        <a href="#">リンク4</a> / <a href="#">リンク5</a> / <a href="#">リンク6</a>
-
-                        <h2 id="link">Link</h2>
-
-                        <dl>
-                            <dt>MASTER:</dt>
-                            <dd>NAME</dd>
-
-                            <dt>SITE NAME:</dt>
-                            <dd>SITE NAME</dd>
-
-                            <dt>URL:</dt>
-                            <dd>http://</dd>
-
-                            <dt>BANNER URL:</dt>
-                            <dd><input size="20" type="text" name="url" value="*****"></dd>
-
-                            <dt>BANNER</dt>
-                            <dd>
-                                <img src="image/banner200.gif" width="200" height="40" alt="banner">
-                                <img src="image/banner88.gif" width="88" height="31" alt="banner">
-                                <img src="image/banner32.gif" width="32" height="32" alt="banner">
-                            </dd>
-                        </dl>
-
-                        <h3>love</h3>
-                        <a href="#"><img src="image/nobanner200.gif" width="200" height="40" alt="image"></a>
-                        <a href="#"><img src="image/ba01.gif" width="200" height="40" alt="image"></a><br>
-                        <a href="#"><img src="image/nobanner88.gif" width="88" height="31" alt="image"></a>
-                        <a href="#"><img src="image/ba02.gif" width="88" height="31" alt="image"></a>
-                        <a href="#"><img src="image/ba02.gif" width="88" height="31" alt="image"></a><br>
-                        <a href="#"><img src="image/nobanner32.gif" width="32" height="32" alt="image"></a>
-                        <a href="#"><img src="image/ba03.gif" width="32" height="32" alt="image"></a>
-                        <a href="#"><img src="image/ba03.gif" width="32" height="32" alt="image"></a>
-
-                        <!-- ▲右側の内容▲ -->
-                    </article>
-
-                    <!-- ページ内リンクのために余白空けています 削除可 -->
-                    <div style="height:500px"></div>
-
+                    {{ content | safe }}
                 </div>
-            </div><!-- ▲右側▲ -->
-
-
+            </div>
             <!-- ▼左側▼ -->
             <div id="side-bg"></div>
             <div id="leftcolumn-wrap">
@@ -181,29 +101,16 @@ title: rivst
                     </aside>
 
                 </div>
-            </div><!-- ▲左側▲ -->
-
-            <!-- ▼フッタ▼ -->
+            </div>
             <footer>
                 <div id="footer-inner">
-                    <div id="fl"><a href="http://foollovers.com" target="_blank">designed</a></div>
+                    <div id="fl">Design by<a href="http://foollovers.com" target="_blank">FOOL LOVE<span>R</span>S</a>
+                    </div>
                 </div>
-            </footer><!-- ▲フッタ▲ -->
-
-        </div><!-- ▲メイン▲ -->
-    </div><!-- ▲全体の囲み▲ -->
-
-    <!-- ページトップに戻る -->
+            </footer>
+        </div>
+    </div>
     <a href="#" id="pagetop" style="bottom: -80px; right: 20px;"><span class="arrow"></span></a>
-
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/jquery.height.js"></script>
-    <script src="js/jquery.scroll.js"></script>
-    <script src="js/jquery.toggle.js"></script>
-
 </body>
-
-{{ content | safe }}
 
 </html>
