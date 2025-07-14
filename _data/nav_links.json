@@ -1,5 +1,9 @@
 [
   {
+    "anchor": "home",
+    "href": "/"
+  },
+  {
     "anchor": "notes",
     "href": "/notes"
   },

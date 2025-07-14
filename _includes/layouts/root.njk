@@ -32,40 +32,18 @@ title: rivst
                     {{ content | safe }}
                 </div>
             </div>
-            <!-- ▼左側▼ -->
             <div id="side-bg"></div>
             <div id="leftcolumn-wrap">
                 <div id="leftcolumn" style="padding-top: 91px;">
-
-                    <!-- ▼メニュー▼ -->
                     <h2>Menu</h2>
                     <div id="menu">
                         <nav>
                             <ul>
-
-                                <li><a href="index2.html">Top</a>
-                                </li>
-                                <li><a href="#link">Link</a>
-                                </li>
-                                <li><a href="#novel">Novel</a>
-                                </li>
-                                <li><a href="sample.html">sample01</a>
-                                </li>
-                                <li><a href="sample02.html">sample02</a>
-
-                                </li>
-                                <li><span>Illust</span>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">サブメニュー1</a>
-                                        </li>
-                                        <li><a href="#">サブメニュー2</a>
-                                        </li>
-                                        <li><a href="#">サブメニュー3</a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                                <li><span>Other</span>
+                                {% for link in nav_links %}
+                                <li><a href="{{link.href}}">{{link.anchor}}</a></li>
+                                {% endfor %}
+                                {# Sub-menu example for later #}
+                                {# <li><span>Other</span>
                                     <ul class="sub-menu">
                                         <li><a href="#">サブメニュー1</a>
                                         </li>
@@ -73,33 +51,14 @@ title: rivst
                                         </li>
                                     </ul>
 
-                                </li>
-                                <li><a href="#">About(工事中)</a>
-
-                                </li>
+                                </li> #}
                             </ul>
                         </nav>
                     </div>
-                    <!-- ▲メニュー▲ -->
-
                     <aside>
-
                         <h2>Update</h2>
-                        <!-- テキストエリア -->
-                        <textarea rows="3" cols="20">20**/8/16 up
-</textarea>
-
-                        <h2>Link</h2>
-
-                        SITE NAME:<br>MASTER:<br>URL:<br>
-                        <a href="#"><img src="image/banner200.gif" alt="banner" width="200" height="40"></a><br><br>
-
-                        <a href="#">テキストリンク</a><br>
-                        <a href="#">テキストリンク</a><br>
-                        <a href="#">テキストリンク</a>
-
+                        <em>UNDER CONSTRUCTION</em>
                     </aside>
-
                 </div>
             </div>
             <footer>
