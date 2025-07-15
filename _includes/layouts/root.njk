@@ -33,41 +33,49 @@ title: rivst
                 </div>
             </div>
             <div id="side-bg"></div>
-            <div id="leftcolumn-wrap">
-                <div id="leftcolumn" style="padding-top: 91px;">
-                    <h2>Menu</h2>
-                    <div id="menu">
+            <aside>
+                <div id="leftcolumn-wrap">
+                    <div id="leftcolumn" style="padding-top: 91px;">
+                        <h2>Menu</h2>
+                        <div id="menu">
+                            <nav>
+                                <ul>
+                                    {% for link in nav_links %}
+                                    <li><a href="{{link.href}}">{{link.anchor}}</a></li>
+                                    {% endfor %}
+                                    {# Sub-menu example for later #}
+                                    {# <li><span>Other</span>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">サブメニュー1</a>
+                                            </li>
+                                            <li><a href="#">サブメニュー2</a>
+                                            </li>
+                                        </ul>
+
+                                    </li> #}
+                                </ul>
+                            </nav>
+                        </div>
+                        <h2>Socials</h2>
                         <nav>
                             <ul>
-                                {% for link in nav_links %}
-                                <li><a href="{{link.href}}">{{link.anchor}}</a></li>
+                                {% for link in social_links %}
+                                <li><a href="{{link.href}}" rel="me">{{link.anchor}}</a></li>
                                 {% endfor %}
-                                {# Sub-menu example for later #}
-                                {# <li><span>Other</span>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">サブメニュー1</a>
-                                        </li>
-                                        <li><a href="#">サブメニュー2</a>
-                                        </li>
-                                    </ul>
-
-                                </li> #}
                             </ul>
                         </nav>
-                    </div>
-                    <aside>
                         <h2>Update</h2>
                         <em>UNDER CONSTRUCTION</em>
-                    </aside>
+                    </div>
+            </aside>
+        </div>
+        <footer>
+            <div id="footer-inner">
+                <div id="fl">Design by<a href="http://foollovers.com" target="_blank">FOOL LOVE<span>R</span>S</a>
                 </div>
             </div>
-            <footer>
-                <div id="footer-inner">
-                    <div id="fl">Design by<a href="http://foollovers.com" target="_blank">FOOL LOVE<span>R</span>S</a>
-                    </div>
-                </div>
-            </footer>
-        </div>
+        </footer>
+    </div>
     </div>
     <a href="#" id="pagetop" style="bottom: -80px; right: 20px;"><span class="arrow"></span></a>
 </body>
