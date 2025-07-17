@@ -18,4 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
             toggleText.textContent = "Menu"
         }
     })
+
+    navBg.addEventListener("click", () => {
+        navBg.style.display = "none";
+        nav.classList.remove("open");
+        toggle.classList.remove("buttonClose");
+        toggleIcon.classList.remove("close");
+        toggleText.textContent = "Menu"
+    })
 });
