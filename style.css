@@ -502,7 +502,7 @@ hr {
 
 /*  文字の下の線
 ------------------------------ */
-.line {
+.line :not(table) {
   background: -webkit-linear-gradient(bottom, #ccc 1px, rgba(255, 255, 255, 0) 1px);
   background: linear-gradient(to top, #ccc 1px, rgba(255, 255, 255, 0) 1px);
   background-position: left top;
@@ -510,6 +510,11 @@ hr {
   /* 同じにする */
   line-height: 2em
     /* 同じにする */
+}
+
+.line table,
+.line table * {
+  background: none;
 }
 
 /* ===================================
@@ -722,6 +727,10 @@ hr {
     left: 0;
     z-index: 999;
     cursor: pointer
+  }
+
+  #side-bg.visible {
+    display: block;
   }
 
   #open.buttonclose {
